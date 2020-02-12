@@ -14,9 +14,17 @@ body {
 
 /*--------------------------------------------Footer*/
 
-footer {
-    background-color: #525252;
-    color: #fafafa;
-    min-height: 120px;
-    margin: 0;
+footer a {
+    color: #ccc;
+}
+footer a:hover,
+footer a:focus{
+    color: #eee;
+}
+header {
+  padding: 156px 0 100px;
+}
+
+section {
+  padding: 150px 0;
 }
