@@ -4,12 +4,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
+header {
   background-color: #ffffff;
-  padding: 30px;
+  padding: 156px 0 100px;
   text-align: center;
 }
 
+section {
+  padding: 150px 0;
 }
 
 /*--------------------------------------------Footer*/
@@ -21,10 +23,5 @@ footer a:hover,
 footer a:focus{
     color: #eee;
 }
-header {
-  padding: 156px 0 100px;
-}
+  
 
-section {
-  padding: 150px 0;
-}
