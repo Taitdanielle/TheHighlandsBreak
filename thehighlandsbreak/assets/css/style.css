@@ -19,7 +19,7 @@ section {
   padding: 250px 0;
 }
 .book {
-    background-image: url('image/landscape3.jpg');
+    background-image: url(images/landscape10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
