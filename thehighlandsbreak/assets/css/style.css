@@ -1,21 +1,57 @@
 .nav-bar {
     text-decoration-color: #ffffff;
 }
+
 body {
   margin: 0;
   font-size: 20px;
   font-family: 'Noto Sans', sans-serif;
 }
 
+
+
 header {
-  background-color: #ffffff;
   padding: 156px 0 100px;
   text-align: center;
 }
 
 section {
-  padding: 150px 0;
+  padding: 250px 0;
 }
+.book {
+    background-image: url('image/landscape3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #a19d9d;
+    color: rgb(193, 218, 241);
+}
+
+/*--------------------------------------------Map*/
+div#map {
+    min-height: 360px;
+}
+
+/*--------------------------------------------Media Queries*/
+
 
 /*--------------------------------------------Footer*/
 
@@ -24,7 +60,7 @@ footer a {
 }
 footer a:hover,
 footer a:focus{
-    color: #eee;
+    color: rgb(193, 218, 241);
 }
   
 
