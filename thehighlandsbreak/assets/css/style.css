@@ -16,7 +16,7 @@ header {
 }
 
 section {
-  padding: 250px 0;
+  padding: 200px 0;
 }
 .book {
     background-image: url(images/landscape10.jpg);
@@ -57,6 +57,8 @@ div#map {
 
 footer a {
     color: #ccc;
+    text-align: center;
+    
 }
 footer a:hover,
 footer a:focus{
