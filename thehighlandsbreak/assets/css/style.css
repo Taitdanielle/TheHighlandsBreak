@@ -11,7 +11,7 @@ body {
 
 
 header {
-  padding: 156px 0 100px;
+  padding: 120px 0 50px;
   text-align: center;
 }
 intro-image {
@@ -21,7 +21,7 @@ intro-image {
 
 }
 section {
-  padding: 200px 0;
+  padding: 50px 0;
 }
 .book {
     background-image: url(images/landscape10.jpg);
