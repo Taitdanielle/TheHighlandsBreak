@@ -14,14 +14,15 @@ header {
   padding: 120px 0 50px;
   text-align: center;
 }
-intro-image {
-
-    background-image: url()
-
+hr {
+    width: 20rem;
+    height: 10rem;
+    color: #a19d9d;
 
 }
 section {
   padding: 50px 0;
+
 }
 .book {
     background-image: url(images/landscape10.jpg);
