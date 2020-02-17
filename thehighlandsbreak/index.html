@@ -117,9 +117,21 @@
         
 	</section>
     <!--- Form -->
-<section id="book">
-<h2>Book Now</h2>
-<p>Please fill in the below form and wee will be in touch to help.</p>
+<section id="book" class="container-fluid ">
+        <div class="row bg-color-contact">
+            <div>
+                <h3 class="contact-heading uppercase text-center">Book Now</h3>
+                <h5 class="uppercase text-center">Please fill in the below form and wee will be in touch to help.</h5>
+            </div>
+            <div class="center-form">
+                <form>
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
+                    <button type="submit" class="btn btn-secondary center-block">Enquire</button>
+                </form>
+            </div>
+        </div>
 </section>
 
 	<!-- Footer -->
