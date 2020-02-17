@@ -20,25 +20,23 @@ hr {
     color: #a19d9d;
 
 }
+
+ p {
+     font-style: 
+ }
+
 section {
   padding: 50px 0;
 
 #map {
   height: 400px;  /* The height is 400 pixels */
-  width: 100%;  /* The width is the width of the web page */
+  width: 50%;  /* The width is the width of the web page */
 
   html, body {
     height: 100%;
     margin: 0;
     padding: 0;
   }
-
-}
-.book {
-    background-image: url(images/landscape10.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .contact-heading {
     font-family: "Nato Sans", sans-serif;
