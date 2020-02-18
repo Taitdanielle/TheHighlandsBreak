@@ -27,16 +27,7 @@ hr {
 
 section {
   padding: 50px 0;
-
-#map {
-  height: 400px;  /* The height is 400 pixels */
-  width: 50%;  /* The width is the width of the web page */
-
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+}
 
 .contact-heading {
     font-family: "Nato Sans", sans-serif;
@@ -60,8 +51,10 @@ button[type="submit"] {
 }
 
 /*--------------------------------------------Map*/
-div#map {
-    min-height: 360px;
+#map {
+    height: 50%;
+    margin: 15px;
+    position: relative;
 }
 
 /*--------------------------------------------Media Queries*/
