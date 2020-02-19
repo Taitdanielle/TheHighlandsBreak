@@ -21,16 +21,11 @@ hr {
 
 }
 
- p {
-     font-style: 
- }
-
 section {
   padding: 50px 0;
 }
 
 .contact-heading {
-    font-family: "Nato Sans", sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 20px;
@@ -52,9 +47,8 @@ button[type="submit"] {
 
 /*--------------------------------------------Map*/
 #map {
-    height: 50%;
-    margin: 15px;
-    position: relative;
+   height:400px;
+   width:100%;
 }
 
 /*--------------------------------------------Media Queries*/
