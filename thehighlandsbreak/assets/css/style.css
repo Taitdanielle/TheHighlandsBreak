@@ -5,10 +5,27 @@
 body {
   margin: 0;
   font-size: 20px;
-  font-family: 'Noto Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
 
+/*---------------------------Background Image*/
+/* Backgroud image taken by myself*/
 
+#landing-picture {
+  background: url("thehighlandsbreak/assests/images/hill.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out; }
+  @media (min-width: 600px) {
+    #landing-picture {
+
+      height: 400px; } 
 
 header {
   padding: 120px 0 50px;
@@ -17,7 +34,7 @@ header {
 hr {
     width: 20rem;
     height: 10rem;
-    color: #a19d9d;
+    color: #575656;
 
 }
 
@@ -41,12 +58,8 @@ section {
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
-    background-color: #a19d9d;
+    background-color: #575656;
     color: rgb(193, 218, 241);
-}
-i {
-    font-size: 55px;
-    outline-color: #fff;
 }
 
 /*--------------------------------------------Map*/
