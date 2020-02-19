@@ -44,11 +44,16 @@ button[type="submit"] {
     background-color: #a19d9d;
     color: rgb(193, 218, 241);
 }
+i {
+    font-size: 55px;
+    outline-color: #fff;
+}
 
 /*--------------------------------------------Map*/
 #map {
    height:400px;
    width:100%;
+   
 }
 
 /*--------------------------------------------Media Queries*/
@@ -59,6 +64,7 @@ button[type="submit"] {
 footer a {
     color: #ccc;
     text-align: center;
+    margin: 0;
     
 }
 footer a:hover,
