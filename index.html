@@ -269,7 +269,6 @@
 
 		<!--- Booking -->
 
-		<section class="container-fluid">
 			        <section class="form-bg">
             <div id="book">
                 <a>&nbsp;</a>
@@ -281,6 +280,14 @@
                     <h2>Book with us</h2>
                     <p>Fill out the contact form below and we will be in touch to help you with your next highland breaks.</p>
                 </div>
+                
+                                <div id="booking-form" class="row">
+      
+                    <form id="booking-form-form" onsubmit="return validateForm(this)" method="POST" class="col-10 offset-1">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="fromName" required/>
+                        </div>
 	</main>
 	<!--./ Booking End (will add email function once maps is done)-->
 
