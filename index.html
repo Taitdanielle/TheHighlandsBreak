@@ -11,8 +11,8 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="assets/js/maps.js"></script>
-    
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 	<title>TheHighlandsBreak</title>
 </head>
@@ -116,11 +116,94 @@
 
 		<!-- Icons (notfinished) -->
 
-		<button i class='fas fa-bed'></i> </button>
-		<button i class="fas fa-hamburger"></i></button>
-		<button i class='fas fa-bicycle'></i></button>
+			<!--POI buttons-->
+			<div class="justify-content-center row">
+
+				<button id="hotel-button" type="submit" class="btn" onClick="checkHotels">                  <!--Hotel button-->
+                            <img src="assets/images/button-icons/bed.png" alt="Bed"><br>Hotel</button>
+
+				<button id="restaurant-button" type="submit" class="btn" onClick="checkRestaurants">         <!--Restaurant button-->
+                            <img src="assets/images/button-icons/restaurant.png" alt="Knife and Folk"><br>Restaurants</button>
+
+				<button id="attraction-button" type="submit" class="btn" onClick="checkAttractions">         <!--Attractions button-->
+                            <img src="assets/images/button-icons/monument.png" alt="Ferris Wheel"><br>Attractions</button>
+
+			</div>
+
+		</div>
 
 		<!--./ End of Icons -->
+
+		<div class="hotel-search">
+			<div id="findhotels">
+				Find hotels in:
+			</div>
+
+			<div id="locationField">
+				<input id="autocomplete" placeholder="Enter a city" type="text" />
+  </div>
+
+				<div id="controls">
+					<select id="country">
+      <option value="all">All</option>
+      <option value="au">Australia</option>
+      <option value="br">Brazil</option>
+      <option value="ca">Canada</option>
+      <option value="fr">France</option>
+      <option value="de">Germany</option>
+      <option value="mx">Mexico</option>
+      <option value="nz">New Zealand</option>
+      <option value="it">Italy</option>
+      <option value="za">South Africa</option>
+      <option value="es">Spain</option>
+      <option value="pt">Portugal</option>
+      <option value="us" selected>U.S.A.</option>
+      <option value="uk">United Kingdom</option>
+    </select>
+				</div>
+			</div>
+
+			<div id="map"></div>
+
+			<div id="listing">
+				<table id="resultsTable">
+					<tbody id="results"></tbody>
+				</table>
+			</div>
+
+			<div style="display: none">
+				<div id="info-content">
+					<table>
+						<tr id="iw-url-row" class="iw_table_row">
+							<td id="iw-icon" class="iw_table_icon"></td>
+							<td id="iw-url"></td>
+						</tr>
+						<tr id="iw-address-row" class="iw_table_row">
+							<td class="iw_attribute_name">Address:</td>
+							<td id="iw-address"></td>
+						</tr>
+						<tr id="iw-phone-row" class="iw_table_row">
+							<td class="iw_attribute_name">Telephone:</td>
+							<td id="iw-phone"></td>
+						</tr>
+						<tr id="iw-rating-row" class="iw_table_row">
+							<td class="iw_attribute_name">Rating:</td>
+							<td id="iw-rating"></td>
+						</tr>
+						<tr id="iw-website-row" class="iw_table_row">
+							<td class="iw_attribute_name">Website:</td>
+							<td id="iw-website"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="form-group">
+				<input id="autocomplete" class="form-control" placeholder="Enter a city" type="text" />
+                        </div>
+
+			</div>
+
+
 
 		<!-- Google Map -->
 		<section>
@@ -142,7 +225,6 @@
 
     
 			</script>
-
 
 		</section>
 		<!--./ End of Map -->
@@ -197,7 +279,7 @@
 	</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
 	</script>
-	
+
 	<script async defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB6lsBTP858vgMYEP7rM2yk-ipq3H9XaQ&callback=initMap">
 	</script>
