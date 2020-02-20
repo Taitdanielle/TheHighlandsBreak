@@ -2,9 +2,23 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-.nav-bar {
-    text-decoration-color: #ffffff;
-}
+/*---------------------------/Components*/
+/*---------------------------Margins and paddings*/
+/*---------------------------Media Queries*/
+/*---------------------------Colours*/
+/*---------------------------Navigation*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.navbar-nav {
+  margin: 1em 0 0 1em; }
+
+.navbar {
+  padding: 0rem 1rem; }
+
+.navbar-light
+.navbar-nav
+.nav-link {
+  font-size: 1.3em; }
+
 
 body {
   margin: 0;
@@ -16,7 +30,7 @@ font-family: 'Montserrat', sans-serif;
 /* Backgroud image taken by myself*/
 
 #landing-picture {
-  background: url("/assests/images/hill.jpeg");
+  background: url("assets/images/hill.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
