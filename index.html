@@ -114,33 +114,35 @@
 		<!--./ End of Carousel -->
 		<hr>
 
+        		<div class="container text-center" id="find">
+			<h2>Find it</h2>
+		</div>
+
 		<!-- Icons (notfinished) -->
 
-			<!--POI buttons-->
-			<div class="justify-content-center row">
+		<div class="justify-content-center row">
 
-				<button id="hotel-button" type="submit" class="btn" onClick="checkHotels">                  <!--Hotel button-->
+			<button id="hotel-button" type="submit" class="btn" onClick="checkHotels">                  <!--Hotel button-->
                             <img src="assets/images/button-icons/bed.png" alt="Bed"><br>Hotel</button>
 
-				<button id="restaurant-button" type="submit" class="btn" onClick="checkRestaurants">         <!--Restaurant button-->
+			<button id="restaurant-button" type="submit" class="btn" onClick="checkRestaurants">         <!--Restaurant button-->
                             <img src="assets/images/button-icons/restaurant.png" alt="Knife and Folk"><br>Restaurants</button>
 
-				<button id="attraction-button" type="submit" class="btn" onClick="checkAttractions">         <!--Attractions button-->
+			<button id="attraction-button" type="submit" class="btn" onClick="checkAttractions">         <!--Attractions button-->
                             <img src="assets/images/button-icons/monument.png" alt="Ferris Wheel"><br>Attractions</button>
 
-			</div>
+		</div>
 
 		</div>
 
 		<!--./ End of Icons -->
-
 		<div class="hotel-search">
 			<div id="findhotels">
 				Find hotels in:
 			</div>
 
 			<div id="locationField">
-				<input id="autocomplete" placeholder="Enter a city" type="text" />
+				<input id="autocomplete" placeholder="Scotland" type="text" />
   </div>
 
 				<div id="controls">
@@ -157,8 +159,11 @@
       <option value="za">South Africa</option>
       <option value="es">Spain</option>
       <option value="pt">Portugal</option>
-      <option value="us" selected>U.S.A.</option>
-      <option value="uk">United Kingdom</option>
+      <option value="us">U.S.A.</option>
+      <option value="uk"selected>United Kingdom</option>
+      			<div class="form-group">
+				<input id="autocomplete" class="form-control" placeholder="Enter a city" type="text" />
+                        </div>
     </select>
 				</div>
 			</div>
@@ -197,20 +202,13 @@
 					</table>
 				</div>
 			</div>
-			<div class="form-group">
-				<input id="autocomplete" class="form-control" placeholder="Enter a city" type="text" />
-                        </div>
 
-			</div>
+		</div>
 
 
 
 		<!-- Google Map -->
 		<section>
-			<div class="container text-center" id="find">
-				<h2>Find it</h2>
-			</div>
-
 			<!--The div element for the map -->
 
 			<div id="map"></div>
