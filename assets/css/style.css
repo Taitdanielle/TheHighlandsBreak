@@ -1,12 +1,7 @@
-html {
+html,body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/*---------------------------/Components*/
-/*---------------------------Margins and paddings*/
-/*---------------------------Media Queries*/
-/*---------------------------Colours*/
-/*---------------------------Navigation*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 .navbar-nav {
   margin: 1em 0 0 1em; }
@@ -23,12 +18,10 @@ html {
 body {
   margin: 0;
   font-size: 20px;
-font-family: 'Montserrat', sans-serif;
 }
 
 /*---------------------------Background Image*/
 /* Backgroud image taken by myself*/
-
 #landing-picture {
   background: url("assets/images/hill.jpeg");
   background-position: center;
@@ -49,6 +42,7 @@ header {
   padding: 120px 0 50px;
   text-align: center;
 }
+
 hr {
     width: 20rem;
     height: 10rem;
@@ -95,12 +89,10 @@ button[type="submit"] {
 footer a {
     color: #ccc;
     text-align: center;
-    margin: 0;
+    margin:0px;
     
 }
 footer a:hover,
 footer a:focus{
     color: rgb(193, 218, 241);
 }
-  
-
