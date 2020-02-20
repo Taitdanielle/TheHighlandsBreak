@@ -23,7 +23,7 @@ body {
 /*---------------------------Background Image*/
 /* Backgroud image taken by myself*/
 #landing-picture {
-  background: url("assets/images/hill.jpeg");
+  background: url("assets/css/images/landscape10.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,6 +34,7 @@ body {
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out; }
   @media (min-width: 600px) {
+
     #landing-picture {
 
       height: 400px; } 
