@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="assets/js/maps.js"></script>
+	<script src="assets/js/main.js"></script>
 
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
@@ -112,31 +112,31 @@
 		<!--./ End of Carousel -->
 		<hr>
 
-   <div id="find">
-                <a>&nbsp;</a>
-             </div>
-             
-            <div class="find-text text-center">
-              
-                <h1>Find your break</h1>
-                
-                <br>
-                
-                <p>Type in the city of Scotland and choose from one of the three buttons below.</p>
-                <p>You can view additional information for a venue which will be displayed above it's marker 
-                 by clicking on it's tile.</p>
-            
-            </div>
-        
-            <!-- #main-button wraps drop down and city input field-->
-            <div id="main-buttons">
-                <div class="container">
-                    
-                    <div class="justify-content-center row">
-                        
-                        <div id="controls">
-                            
-                            <select id="country" class="form-control">
+		<div id="find">
+			<a>&nbsp;</a>
+		</div>
+
+		<div class="find-text text-center">
+
+			<h1>Find your break</h1>
+
+			<br>
+
+			<p>Type in the city of Scotland and choose from one of the three buttons below.</p>
+			<p>You can view additional information for a venue which will be displayed above it's marker
+				by clicking on it's tile.</p>
+
+		</div>
+
+		<!-- #main-button wraps drop down and city input field-->
+		<div id="main-buttons">
+			<div class="container">
+
+				<div class="justify-content-center row">
+
+					<div id="controls">
+
+						<select id="country" class="form-control">
                                 <option value="all">All</option>
                                 <option value="au">Australia</option>
                                 <option value="br">Brazil</option>
@@ -154,101 +154,100 @@
                                 <option value="us">U.S.A.</option>
                                 <option value="uk" selected>United Kingdom</option>
                             </select>
-                                    
+
+					</div>
+					<!--#/controls-->
+
+					<div class="form-group">
+						<input id="autocomplete" class="form-control" placeholder="Enter a city" type="text" />
                         </div>
-                        <!--#/controls-->
-                        
-                        <div class="form-group">
-                            <input id="autocomplete" class="form-control" placeholder="Enter a city" type="text" />
-                        </div>
-                        
-                    </div>
-                    
-                    <!--POI buttons-->
-                    <div class="justify-content-center row">
-            
-                        <button id="hotel-button" type="submit" class="btn" onClick="checkHotels">                  <!--Hotel button-->
+
+					</div>
+
+					<!--POI buttons-->
+					<div class="justify-content-center row">
+
+						<button id="hotel-button" type="submit" class="btn" onClick="checkHotels">                  <!--Hotel button-->
                             <img src="assets/images/button-icons/bed.png" alt="Bed"><br>Hotel</button>
-                    
-                        <button id="restaurant-button" type="submit" class="btn" onClick="checkRestaurants">         <!--Restaurant button-->
+
+						<button id="restaurant-button" type="submit" class="btn" onClick="checkRestaurants">         <!--Restaurant button-->
                             <img src="assets/images/button-icons/restaurant.png" alt="Restaurant"><br>Restaurants</button>
-                                
-                        <button id="attraction-button" type="submit" class="btn" onClick="checkAttractions">         <!--Attractions button-->
+
+						<button id="attraction-button" type="submit" class="btn" onClick="checkAttractions">         <!--Attractions button-->
                             <img src="assets/images/button-icons/monument.png" alt="Monument"><br>Attractions</button>
-            
-                    </div>
-                        
-                </div>
-                <!--./container-->
-                
-            </div>
-            <!--#/main-buttons-->
-            
-            <div id="main">
-                <div class="container">
-                    
-                    <!-- listings and map-->
-                    <div class="row">
-                        
-                        <div id="map" class="col-sm-12 col-md-6"></div>
-                
-                        <div class="col-md-6">
-                            <div class="justify-content-center row">
-                                    
-                                        <h5 class="break font-weight-bold mt-3 ml-md-5">Find your perfect break!</h5> 
-                                 
-                                </div>
-                            </div>
-                            
-                            <div id="listing">
-                                <div id="results"></div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <!--./row-->
-                    
-                    <!--Info window-->
-                    <div style="display: none">
-                        <div id="info-content">
-            
-                            <table>
-                                <tr id="iw-url-row" class="iw_table_row">
-                                    <td id="iw-icon" class="iw_table_icon"></td>
-                                    <td id="iw-url"></td>
-                                </tr>
-                                <tr id="iw-address-row" class="iw_table_row">
-                                    <td class="iw_attribute_name">Address:</td>
-                                    <td id="iw-address"></td>
-                                </tr>
-                                <tr id="iw-phone-row" class="iw_table_row">
-                                    <td class="iw_attribute_name">Telephone:</td>
-                                    <td id="iw-phone"></td>
-                                </tr>
-                                <tr id="iw-rating-row" class="iw_table_row">
-                                    <td class="iw_attribute_name">Rating:</td>
-                                    <td id="iw-rating"></td>
-                                </tr>
-                                <tr id="iw-website-row" class="iw_table_row">
-                                    <td class="iw_attribute_name">Website:</td>
-                                    <td id="iw-website"></td>
-                                </tr>
-                            </table>
-            
-                        </div>
-                        <!--#/info-content-->
-                    </div>
-                    <!--./Display style for info window-->
-                    
-                </div>
-                <!--./container-->
-            </div>
-            <!--#/main-->
-            
-        </section>
-        <!--End of Find-->
+
+					</div>
+
+				</div>
+				<!--./container-->
+
+			</div>
+			<!--#/main-buttons-->
+
+			<div id="main">
+				<div class="container">
+
+					<!-- listings and map-->
+					<div class="row">
+
+						<div id="map" class="col-sm-12 col-md-6"></div>
+
+						<div class="col-md-6">
+							<div class="justify-content-center row">
+
+								<h5 class="break font-weight-bold mt-3 ml-md-5">Find your perfect break!</h5>
+
+							</div>
+						</div>
+
+						<div id="listing">
+							<div id="results"></div>
+						</div>
+					</div>
+
+				</div>
+				<!--./row-->
+
+				<!--Info window-->
+				<div style="display: none">
+					<div id="info-content">
+
+						<table>
+							<tr id="iw-url-row" class="iw_table_row">
+								<td id="iw-icon" class="iw_table_icon"></td>
+								<td id="iw-url"></td>
+							</tr>
+							<tr id="iw-address-row" class="iw_table_row">
+								<td class="iw_attribute_name">Address:</td>
+								<td id="iw-address"></td>
+							</tr>
+							<tr id="iw-phone-row" class="iw_table_row">
+								<td class="iw_attribute_name">Telephone:</td>
+								<td id="iw-phone"></td>
+							</tr>
+							<tr id="iw-rating-row" class="iw_table_row">
+								<td class="iw_attribute_name">Rating:</td>
+								<td id="iw-rating"></td>
+							</tr>
+							<tr id="iw-website-row" class="iw_table_row">
+								<td class="iw_attribute_name">Website:</td>
+								<td id="iw-website"></td>
+							</tr>
+						</table>
+
+					</div>
+					<!--#/info-content-->
+				</div>
+				<!--./Display style for info window-->
+
+			</div>
+			<!--./container-->
+		</div>
+		<!--#/main-->
+
+		</section>
+		<!--End of Find-->
 		<!-- Google Map -->
-		<section>
 			<!--The div element for the map -->
 
 			<div id="map"></div>
@@ -263,111 +262,111 @@
 
     
 			</script>
-
-		</section>
 		<!--./ End of Map -->
 
 		<!--- Booking -->
 
-			        <section class="form-bg">
-            <div id="book">
-                <a>&nbsp;</a>
-            </div>
-            
-            <div class="container">
-          
-                <div class="booking-text text-center">
-                    <h2>Book with us</h2>
-                    <p>Fill out the contact form below and we will be in touch to help you with your next highland breaks.</p>
-                </div>
+		<section class="form-bg">
+			<div id="book">
+				<a>&nbsp;</a>
+			</div>
 
-                                <div id="booking-form" class="row">
-      
-                    <form id="booking-form-form" onsubmit="return validateForm(this)" method="POST" class="col-10 offset-1">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" name="fromName" required/>
+			<div class="container">
+
+				<div class="booking-text text-center">
+					<h2>Book with us</h2>
+					<p>Fill out the contact form below and we will be in touch to help you with your next highland
+						breaks.</p>
+				</div>
+
+				<div id="booking-form" class="row">
+
+					<form id="booking-form-form" onsubmit="return validateForm(this)" method="POST"
+						class="col-10 offset-1">
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="text" class="form-control" id="name" name="fromName" required/>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" name="emailAddress" required/>
+							<div class="form-group">
+								<label for="email">Email address</label>
+								<input type="email" class="form-control" id="email" name="emailAddress" required/>
                         </div>
-                        <div class="form-group">
-                            <label for="telephone">Telephone Number</label>
-                            <input type="tel" name="telephone" id="telephone" class="form-control" required/>
+								<div class="form-group">
+									<label for="telephone">Telephone Number</label>
+									<input type="tel" name="telephone" id="telephone" class="form-control" required/>
                         </div>
-                        <div class="form-group">
-                            <label for="poi-selection">Select a category</label>
-                            <select class="form-control" id="poi-selection" name="poi">
+									<div class="form-group">
+										<label for="poi-selection">Select a category</label>
+										<select class="form-control" id="poi-selection" name="poi">
                                 <option>Hotel</option>
                                 <option>Restaurant</option>
                                 <option>Attraction</option>
                             </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="details">Addition information</label>
-                            <textarea class="form-control" id="details" rows="3" name="message"></textarea>
-                        </div>
-                        
-                        <input id="submit-form" class="btn text-uppercase" value="Send message" type="submit"/>
-                       
+									</div>
+									<div class="form-group">
+										<label for="details">Addition information</label>
+										<textarea class="form-control" id="details" rows="3" name="message"></textarea>
+									</div>
+
+									<input id="submit-form" class="btn text-uppercase" value="Send message" type="submit"/>
+
                     </form>
-                    
-                </div>
+
+								</div>
+                                </section>
 	</main>
 	<!--./ Booking End (will add email function once maps is done)-->
-<!-- Modal -->
-<div id="myModal" class="modal">
-          
-                    <div class="modal-content">
-                        <div class="row">
-                            
-                            <span class="close-cross col-1">&times;</span>
-                            
-                            <div class="text-center col-11">
-                                <p>Thank you!</p>
-                                <p>We look forward to speaking with you.</p>
-                    
-                                <button id="close" class="btn text-uppercase" type="button">Close</button>
-                                                            </div>
-                            
-                        </div>
-                        <!--./row-->
-                    </div>
-    <!--./modal-content-->
-	<!-- Footer -->
-	<footer class="bg-dark text-white py-4">
-		<div class="col-12 ml-auto text-center" id="social-links">
-			<a href="https://en-gb.facebook.com" target="_blank">
+	<!-- Modal -->
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<div class="row">
 
-				<i class="fab fa-facebook-f"></i>
-			</a>
-			<a href="https://www.instagram.com" target="_blank">
+				<span class="close-cross col-1">&times;</span>
 
-				<i class="fab fa-instagram"></i>
-			</a>
-			<a href="https://twitter.com" target="_blank">
+				<div class="text-center col-11">
+					<p>Thank you!</p>
+					<p>We look forward to speaking with you.</p>
 
-				<i class="fab fa-twitter"></i>
-			</a>
+					<button id="close" class="btn text-uppercase" type="button">Close</button>
+				</div>
+
+			</div>
+			<!--./row-->
 		</div>
+		<!--./modal-content-->
+		<!-- Footer -->
+		<footer class="bg-dark text-white py-4">
+			<div class="col-12 ml-auto text-center" id="social-links">
+				<a href="https://en-gb.facebook.com" target="_blank">
 
-		<!-- Linked to github -->
-		<div class="col-12 text-center small">
-			<a href="https://github.com/Taitdanielle">@2020 DanielleTait</a>
-		</div>
-	</footer>
-	<!--./footer end -->
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="https://www.instagram.com" target="_blank">
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
-	</script>
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="https://twitter.com" target="_blank">
 
-	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB6lsBTP858vgMYEP7rM2yk-ipq3H9XaQ&callback=initMap">
-	</script>
+					<i class="fab fa-twitter"></i>
+				</a>
+			</div>
+
+			<!-- Linked to github -->
+			<div class="col-12 text-center small">
+				<a href="https://github.com/Taitdanielle">@2020 DanielleTait</a>
+			</div>
+		</footer>
+		<!--./footer end -->
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+		</script>
+
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB6lsBTP858vgMYEP7rM2yk-ipq3H9XaQ&callback=initMap">
+		</script>
 
 </body>
 

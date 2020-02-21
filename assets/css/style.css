@@ -22,6 +22,7 @@ body {
 
 /*---------------------------Background Image*/
 /* Backgroud image taken by myself*/
+
 #landing-picture {
   background: url("assets/images/landscape10.jpg");
   background-position: center;
@@ -45,8 +46,10 @@ header {
 }
 
 hr {
-    width: 20rem;
-    height: 10rem;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    border:0;
+    border-top:5px solid;
     color: #575656;
 
 }
@@ -74,6 +77,7 @@ button[type="submit"] {
     margin-bottom: 20px;
     color: rgb(193, 218, 241);
 }
+
 
 #restaurant-button.btn{
 
