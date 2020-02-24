@@ -147,8 +147,17 @@ button[type="submit"] {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #575656;
   width: 60%; }
+
+  .close-cross {
+  color: #575656;
+  font-size: 2.5em;
+  font-weight: bold; }
+  .close-cross:hover {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer; }
 /*--------------------------------------------Media Queries*/
 
 
