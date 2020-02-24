@@ -75,3 +75,12 @@ function checkRestaurants() {
     search.types.push('restaurant');
     searchPoi();
 }
+
+//Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.
+function checkAttractions() {
+    hideLogo();
+    search.types = [];
+    search.bounds = map.getBounds();
+    search.types.push('point_of_interest');
+    searchPoi();
+}
