@@ -24,3 +24,14 @@ var countries =  },
   infoWindow = new google.maps.InfoWindow({
     content: document.getElementById('info-content')
   });
+
+  autocomplete = new google.maps.places.Autocomplete(
+      /** @type {!HTMLInputElement} */ (
+          document.getElementById('autocomplete')), {
+        types: ['(cities)'],
+        componentRestrictions: countryRestrict
+      });
+
+       places = new google.maps.places.PlacesService(map);
+
+  autocomplete.addListener('place_changed', onPlaceChanged);
