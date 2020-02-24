@@ -66,3 +66,12 @@ function checkHotels() {
     search.types.push('lodging');
     searchPoi();
 }
+
+//Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.
+function checkRestaurants() {
+    hideLogo();
+    search.types = [];
+    search.bounds = map.getBounds();
+    search.types.push('restaurant');
+    searchPoi();
+}
