@@ -42,13 +42,13 @@
 	<!--./ end of Navigation -->
 
 	<div class="jumbotron d-block w-100"">
-		<div class="container text-center">
-			<div id="landing-picture">
-				<h1>TheHighlandsBreak</h1>
-                <p>A Scottish get away!</p>
-			</div>
+		<div class=" container text-center">
+		<div id="landing-picture">
+			<h1>TheHighlandsBreak</h1>
+			<p>A Scottish get away!</p>
 		</div>
-    </div>
+	</div>
+	</div>
 
 	<hr>
 
@@ -132,55 +132,54 @@
 
 					<div id="controls">
 
-				
-					<!--#/controls-->
 
-					<div class="form-group">
-						<input id="autocomplete" class="form-control" placeholder="Enter a city in Scotland" type="text" />
+						<!--#/controls-->
+
+						<div class="form-group">
+							<input id="autocomplete" class="form-control" placeholder="Enter a city in Scotland" type="text" />
                         </div>
 
-					</div>
+						</div>
 
-					<!--POI buttons-->
-					<div class="justify-content-center row">
+						<!--POI buttons-->
+						<div class="justify-content-center row">
 
-						<button id="hotel-button" type="submit" class="btn" onClick="checkHotels">                  <!--Hotel button-->
+							<button id="hotel-button" type="submit" class="btn" onClick="checkHotels">                  <!--Hotel button-->
                             <img src="assets/images/button-icons/bed.png" alt="Bed"><br>Hotel</button>
 
-						<button id="restaurant-button" type="submit" class="btn" onClick="checkRestaurants">         <!--Restaurant button-->
+							<button id="restaurant-button" type="submit" class="btn" onClick="checkRestaurants">         <!--Restaurant button-->
                             <img src="assets/images/button-icons/restaurant.png" alt="Restaurant"><br>Restaurants</button>
 
-						<button id="attraction-button" type="submit" class="btn" onClick="checkAttractions">         <!--Attractions button-->
+							<button id="attraction-button" type="submit" class="btn" onClick="checkAttractions">         <!--Attractions button-->
                             <img src="assets/images/button-icons/monument.png" alt="Monument"><br>Attractions</button>
 
+						</div>
+
 					</div>
+					<!--./container-->
 
 				</div>
-				<!--./container-->
+				<!--#/main-buttons-->
 
-			</div>
-			<!--#/main-buttons-->
+				<div id="main">
+					<div class="container container-fluid">
 
-			<div id="main">
-				<div class="container container-fluid">
+						<!-- listings and map-->
+						<div class="row">
 
-					<!-- listings and map-->
-					<div class="row">
-
-						<div id="map" class="col-sm-12 col-md-12 col-12"></div>
+							<div id="map" class="col-sm-12 col-md-12 col-12"></div>
 						</div>
-						<div id="listing">
-							<div id="results"></div>
-						</div>
-					</div>
-
-				</div>
 				<!--./row-->
 
 				<!--Info window-->
-				<div>
-					<div id="info-content">
+				<div class="justify-content-center row" id="Listings">
+					<table id="resultsTable">
+						<tbody id="results"></tbody>
+					</table>
+				</div>
 
+				<div style="display">
+					<div id="info-content">
 						<table>
 							<tr id="iw-url-row" class="iw_table_row">
 								<td id="iw-icon" class="iw_table_icon"></td>
@@ -203,14 +202,14 @@
 								<td id="iw-website"></td>
 							</tr>
 						</table>
-
 					</div>
-					<!--#/info-content-->
 				</div>
-				<!--./Display style for info window-->
-
+				<!--#/info-content-->
 			</div>
-			<!--./container-->
+			<!--./Display style for info window-->
+
+		</div>
+		<!--./container-->
 		</div>
 		<!--#/main-->
 

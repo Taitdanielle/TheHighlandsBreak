@@ -1,9 +1,12 @@
 html,body {
     font-family: 'Montserrat', sans-serif;
+      margin: 0;
+  font-size: 20px;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-/*.navbar-nav {
+
+.navbar-nav {
   margin: 1em 0 0 1em; }
 
 .navbar {
@@ -13,18 +16,12 @@ html,body {
 .navbar-nav
 .nav-link {
   font-size: 1.3em; }
-*/
 
-
-body {
-  margin: 0;
-  font-size: 20px;
-}
 
 /*---------------------------Background Image*/
 /* Backgroud image taken by myself*/
 
-.jumbotron {
+#landing-picture {
   background: url("assets/images/landscape10.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -41,11 +38,6 @@ body {
 
       height: 400px; } 
 
-header {
-  padding: 120px 0 50px;
-  text-align: center;
-}
-
 hr {
     margin-top:1rem;
     margin-bottom: 1rem;
@@ -60,14 +52,6 @@ hr {
 section {
   padding: 50px 0;
 }
-
-.contact-heading {
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 20px;
-}
-
-
 .center-form {
     padding-top: 10px;
     margin: 0 auto;
@@ -81,16 +65,61 @@ button[type="submit"] {
 }
 
 
-#restaurant-button.btn{
-
 }
 /*--------------------------------------------Map*/
 #map {
    height:400px;
    width:100%;
-   
-}
+   /*------------------------ booking*/
 
+#Listings {
+  position: absolute;
+  width: 200px;
+  height: 470px;
+  overflow: auto;
+  left: 442px;
+  top: 0px;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+#locationField {
+  -webkit-box-flex: 1 1 190px;
+  -ms-flex: 1 1 190px;
+  flex: 1 1 190px;
+  margin: 0 8px;
+}
+#controls {
+  -webkit-box-flex: 1 1 140px;
+  -ms-flex: 1 1 140px;
+  flex: 1 1 140px;
+}
+#autocomplete {
+  width: 100%;
+}
+.placeIcon {
+  width: 20px;
+  height: 34px;
+  margin: 4px;
+}
+}
+#resultsTable {
+  border-collapse: collapse;
+  width: 240px;
+}
+#rating {
+  font-size: 13px;
+  font-family: Arial Unicode MS;
+}
+.iw_table_row {
+  height: 18px;
+}
+.iw_attribute_name {
+  font-weight: bold;
+  text-align: right;
+}
+.iw_table_icon {
+  text-align: right;
+}
 #book {
   position: relative;
   height: 3em; }
@@ -157,6 +186,12 @@ button[type="submit"] {
   .close-cross:hover {
     color: #000000;
     text-decoration: none;
+    cursor: pointer; }
+
+    #close {
+  color: #000000; }
+  #close:hover {
+    text-decoration: underline;
     cursor: pointer; }
 /*--------------------------------------------Media Queries*/
 
