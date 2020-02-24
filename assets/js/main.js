@@ -54,3 +54,15 @@ function onPlaceChanged() {
 var hotel = document.getElementById('hotel-button').addEventListener('click', checkHotels);
 var restaurant = document.getElementById('restaurant-button').addEventListener('click', checkRestaurants);
 var attraction = document.getElementById('attraction-button').addEventListener('click', checkAttractions );
+
+var search = {
+        types:[]
+    };
+//Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.   
+function checkHotels() {
+    hideLogo();
+    search.types = [];
+    search.bounds = map.getBounds();
+    search.types.push('lodging');
+    searchPoi();
+}
