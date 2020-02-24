@@ -24,7 +24,7 @@ body {
 /*---------------------------Background Image*/
 /* Backgroud image taken by myself*/
 
-#landing-picture {
+.jumbotron {
   background: url("assets/images/landscape10.jpg");
   background-position: center;
   background-repeat: no-repeat;
