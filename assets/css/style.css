@@ -110,11 +110,15 @@ button[type="submit"] {
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out; }
 
-.booking-text {
-  text-align: center;
-  color: #ffffff; }
-  .booking-text h2, .booking-text p {
-    padding-top: 1em; }
+#booking-form {
+  background: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5em; }
+  #booking-form .form-group {
+    display: block;
+    margin: 1em; }
+    #booking-form .form-group label {
+      color: #000000;
+      font-weight: bold; }
 /*--------------------------------------------Media Queries*/
 
 
