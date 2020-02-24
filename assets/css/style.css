@@ -98,6 +98,23 @@ button[type="submit"] {
     position: absolute;
     top: -2em; }
 
+.form-bg {
+  background: url("assets/images/fairypool.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 55em;
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out; }
+
+.booking-text {
+  text-align: center;
+  color: #ffffff; }
+  .booking-text h2, .booking-text p {
+    padding-top: 1em; }
 /*--------------------------------------------Media Queries*/
 
 
