@@ -3,7 +3,7 @@ var markers = [];
 var results = {};
 var autocomplete;
 var countryRestrict = {'country': 'uk'};
-var MARKER_PATH = 'TheHighlandsBreak/assets/images/marker/marker1.png'
+var MARKER_PATH = 'assets/images/marker/marker1.png'
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
 var countries =  },
@@ -60,7 +60,6 @@ var search = {
     };
 //Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.   
 function checkHotels() {
-    hideLogo();
     search.types = [];
     search.bounds = map.getBounds();
     search.types.push('lodging');
@@ -69,7 +68,6 @@ function checkHotels() {
 
 //Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.
 function checkRestaurants() {
-    hideLogo();
     search.types = [];
     search.bounds = map.getBounds();
     search.types.push('restaurant');
@@ -78,7 +76,6 @@ function checkRestaurants() {
 
 //Adds the correct value into the 'types' arrary and gets the city location and passes it to the map object.
 function checkAttractions() {
-    hideLogo();
     search.types = [];
     search.bounds = map.getBounds();
     search.types.push('point_of_interest');
@@ -93,7 +90,8 @@ places.nearbySearch(search, function(results, status) {
       // assign a letter of the alphabetic to each marker icon.
       for (var i = 0; i < results.length; i++) {
         var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
-        var markerIcon = MARKER_PATH + markerLetter + 'marker1.png';
+        var markerIcon = MARKER_PATH + markerLetter + '.png';
+
         // Use marker animation to drop the icons incrementally on the map.
         markers[i] = new google.maps.Marker({
           position: results[i].geometry.location,
@@ -186,4 +184,53 @@ function showInfoWindow() {
         infoWindow.open(map, marker);
         buildIWContent(place);
       });
+}
+
+// Load the place information into the HTML elements used by the info window.
+function buildIWContent(place) {
+  document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
+      'src="' + place.icon + '"/>';
+  document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
+      '">' + place.name + '</a></b>';
+  document.getElementById('iw-address').textContent = place.vicinity;
+
+  if (place.formatted_phone_number) {
+    document.getElementById('iw-phone-row').style.display = '';
+    document.getElementById('iw-phone').textContent =
+        place.formatted_phone_number;
+  } else {
+    document.getElementById('iw-phone-row').style.display = 'none';
+  }
+
+  // Assign a five-star rating to the hotel, using a black star ('&#10029;')
+  // to indicate the rating the hotel has earned, and a white star ('&#10025;')
+  // for the rating points not achieved.
+  if (place.rating) {
+    var ratingHtml = '';
+    for (var i = 0; i < 5; i++) {
+      if (place.rating < (i + 0.5)) {
+        ratingHtml += '&#10025;';
+      } else {
+        ratingHtml += '&#10029;';
+      }
+    document.getElementById('iw-rating-row').style.display = '';
+    document.getElementById('iw-rating').innerHTML = ratingHtml;
+    }
+  } else {
+    document.getElementById('iw-rating-row').style.display = 'none';
+  }
+  // The regexp isolates the first part of the URL (domain plus subdomain)
+  // to give a short URL for displaying in the info window.
+  if (place.website) {
+    var fullUrl = place.website;
+    var website = hostnameRegexp.exec(place.website);
+    if (website === null) {
+      website = 'http://' + place.website + '/';
+      fullUrl = website;
+    }
+    document.getElementById('iw-website-row').style.display = '';
+    document.getElementById('iw-website').textContent = website;
+  } else {
+    document.getElementById('iw-website-row').style.display = 'none';
+  }
 }

@@ -1,7 +1,6 @@
 html,body {
     font-family: 'Montserrat', sans-serif;
       margin: 0;
-  font-size: 20px;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
@@ -21,8 +20,8 @@ html,body {
 /*---------------------------Background Image*/
 /* Backgroud image taken by myself*/
 
-#landing-picture {
-  background: url("assets/images/landscape10.jpg");
+#landingpicture {
+  background-image: url("../images/2-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,20 +33,12 @@ html,body {
   -o-transition: all .3s ease-in-out; }
   @media (min-width: 600px) {
 
-    #landing-picture {
+    #landingpicture {
 
       height: 400px; } 
+  {
 
-hr {
-    margin-top:1rem;
-    margin-bottom: 1rem;
-    border:0;
-    border-top:5px solid;
-    color: #575656;
-    width:200px;
-
-}
-
+  
 
 section {
   padding: 50px 0;
@@ -72,7 +63,7 @@ button[type="submit"] {
    width:100%;
    /*------------------------ booking*/
 
-#Listings {
+#listings {
   position: absolute;
   width: 200px;
   height: 470px;
@@ -128,7 +119,7 @@ button[type="submit"] {
     top: -2em; }
 
 .form-bg {
-  background: url("assets/images/fairypool.jpeg");
+  background: url("../images/fairypool.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
