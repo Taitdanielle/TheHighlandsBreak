@@ -40,18 +40,16 @@
 		</div>
 	</nav>
 	<!--./ end of Navigation -->
+	<section>
+		<div id="landingpicture">
+			<div class=" container text-center d-block w-100">
 
-	<div class="jumbotron d-block w-100"">
-		<div class=" container text-center">
-		<div id="landing-picture">
-			<h1>TheHighlandsBreak</h1>
-			<p>A Scottish get away!</p>
+				<h1>TheHighlandsBreak</h1>
+				<p>A Scottish get away!</p>
+			</div>
 		</div>
-	</div>
-	</div>
-
-	<hr>
-
+		</div>
+	</section>
 	<!-- About -->
 	<main>
 		<section>
@@ -91,22 +89,20 @@
 						<img src="assets/images/hill.jpeg" class="d-block w-100" alt="...">
 						<div class="carousel-caption d-none d-md-block">
 							<h5>Glencoe valley and mountains</h5>
-							<p>Climb Glencoe valley and mountains in the Scottish Highlands.</p>>
+							<p>Climb Glencoe valley and mountains in the Scottish Highlands.</p>
 						</div>
 					</div>
+					<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
 				</div>
-				<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
 		</section>
 		<!--./ End of Carousel -->
-		<hr>
 
 		<div id="find">
 			<a>&nbsp;</a>
@@ -169,59 +165,11 @@
 
 							<div id="map" class="col-sm-12 col-md-12 col-12"></div>
 						</div>
-				<!--./row-->
+						<!-- Google Map -->
+						<!--The div element for the map -->
 
-				<!--Info window-->
-				<div class="justify-content-center row" id="Listings">
-					<table id="resultsTable">
-						<tbody id="results"></tbody>
-					</table>
-				</div>
-
-				<div style="display">
-					<div id="info-content">
-						<table>
-							<tr id="iw-url-row" class="iw_table_row">
-								<td id="iw-icon" class="iw_table_icon"></td>
-								<td id="iw-url"></td>
-							</tr>
-							<tr id="iw-address-row" class="iw_table_row">
-								<td class="iw_attribute_name">Address:</td>
-								<td id="iw-address"></td>
-							</tr>
-							<tr id="iw-phone-row" class="iw_table_row">
-								<td class="iw_attribute_name">Telephone:</td>
-								<td id="iw-phone"></td>
-							</tr>
-							<tr id="iw-rating-row" class="iw_table_row">
-								<td class="iw_attribute_name">Rating:</td>
-								<td id="iw-rating"></td>
-							</tr>
-							<tr id="iw-website-row" class="iw_table_row">
-								<td class="iw_attribute_name">Website:</td>
-								<td id="iw-website"></td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<!--#/info-content-->
-			</div>
-			<!--./Display style for info window-->
-
-		</div>
-		<!--./container-->
-		</div>
-		<!--#/main-->
-
-		</section>
-		<!--End of Find-->
-		<!-- Google Map -->
-		<!--The div element for the map -->
-
-		<div id="map"></div>
-
-		<script>
-			function initMap() {
+						<script>
+							function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 6,
         center: { lat: 55.953251, lng:  -3.188267 }
@@ -229,59 +177,106 @@
         }
 
     
-		</script>
-		<!--./ End of Map -->
+						</script>
+						<!--./ End of Map -->
 
-		<!--- Booking -->
+						<!--./row-->
 
-		<section class="form-bg">
-			<div id="book">
-				<a>&nbsp;</a>
+						<!--Info window-->
+						<div class="justify-content-center row" id="info-window">
+							<table id="resultsTable">
+								<tbody id="results"></tbody>
+							</table>
+						</div>
+
+						<div style="display">
+							<div id="info-content">
+								<table>
+									<tr id="iw-url-row" class="iw_table_row">
+										<td id="iw-icon" class="iw_table_icon"></td>
+										<td id="iw-url"></td>
+									</tr>
+									<tr id="iw-address-row" class="iw_table_row">
+										<td class="iw_attribute_name">Address:</td>
+										<td id="iw-address"></td>
+									</tr>
+									<tr id="iw-phone-row" class="iw_table_row">
+										<td class="iw_attribute_name">Telephone:</td>
+										<td id="iw-phone"></td>
+									</tr>
+									<tr id="iw-rating-row" class="iw_table_row">
+										<td class="iw_attribute_name">Rating:</td>
+										<td id="iw-rating"></td>
+									</tr>
+									<tr id="iw-website-row" class="iw_table_row">
+										<td class="iw_attribute_name">Website:</td>
+										<td id="iw-website"></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!--#/info-content-->
+					</div>
+					<!--./Display style for info window-->
+
+				</div>
+				<!--./container-->
 			</div>
+			<!--#/main-->
 
-			<div class="container">
+			</section>
+			<!--End of Find-->
 
-				<div class="booking-text text-center">
-					<h2>Book with us</h2>
-					<p>Fill out the contact form below and we will be in touch to help you with your next highland
-						breaks.</p>
+			<!--- Booking -->
+
+			<section class="form-bg">
+				<div id="book">
+					<a>&nbsp;</a>
 				</div>
 
-				<div id="booking-form" class="row">
+				<div class="container">
 
-					<form id="booking-form-form" onsubmit="return validateForm(this)" method="POST"
-						class="col-10 offset-1">
-						<div class="form-group">
-							<label for="name">Name</label>
-							<input type="text" class="form-control" id="name" name="fromName" required/>
-                        </div>
+					<div class="booking-text text-center">
+						<h2>Book with us</h2>
+						<p>Fill out the contact form below and we will be in touch to help you with your next highland
+							breaks.</p>
+					</div>
+
+					<div id="booking-form" class="row">
+
+						<form id="booking-form-form" onsubmit="return validateForm(this)" method="POST"
+							class="col-10 offset-1">
 							<div class="form-group">
-								<label for="email">Email address</label>
-								<input type="email" class="form-control" id="email" name="emailAddress" required/>
+								<label for="name">Name</label>
+								<input type="text" class="form-control" id="name" name="fromName" required/>
                         </div>
 								<div class="form-group">
-									<label for="telephone">Telephone Number</label>
-									<input type="tel" name="telephone" id="telephone" class="form-control" required/>
+									<label for="email">Email address</label>
+									<input type="email" class="form-control" id="email" name="emailAddress" required/>
                         </div>
 									<div class="form-group">
-										<label for="poi-selection">Select a category</label>
-										<select class="form-control" id="poi-selection" name="poi">
+										<label for="telephone">Telephone Number</label>
+										<input type="tel" name="telephone" id="telephone" class="form-control" required/>
+                        </div>
+										<div class="form-group">
+											<label for="poi-selection">Select a category</label>
+											<select class="form-control" id="poi-selection" name="poi">
                                 <option>Hotel</option>
                                 <option>Restaurant</option>
                                 <option>Attraction</option>
                             </select>
-									</div>
-									<div class="form-group">
-										<label for="details">Addition information</label>
-										<textarea class="form-control" id="details" rows="3" name="message"></textarea>
-									</div>
+										</div>
+										<div class="form-group">
+											<label for="details">Addition information</label>
+											<textarea class="form-control" id="details" rows="3" name="message"></textarea>
+										</div>
 
-									<input id="submit-form" class="btn text-uppercase" value="Send message" type="submit"/>
+										<input id="submit-form" class="btn text-uppercase" value="Send message" type="submit"/>
 
                     </form>
 
-								</div>
-		</section>
+									</div>
+			</section>
 	</main>
 	<!--./ Booking End (will add email function once maps is done)-->
 	<!-- Modal -->
@@ -301,41 +296,38 @@
 			</div>
 			<!--./row-->
 		</div>
-		<!--./modal-content-->
+	</div>
+	<!--./modal-content-->
 
-		<!-- Footer -->
-		<footer class="bg-dark text-white py-4">
-			<div class="col-12 ml-auto text-center" id="social-links">
-				<a href="https://en-gb.facebook.com" target="_blank">
+	<!-- Footer -->
+	<footer class="bg-dark text-white py-4">
+		<div class="col-12 ml-auto text-center" id="social-links">
+			<a href="https://en-gb.facebook.com" target="_blank">
 
-					<i class="fab fa-facebook-f"></i>
-				</a>
-				<a href="https://www.instagram.com" target="_blank">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a href="https://www.instagram.com" target="_blank">
 
-					<i class="fab fa-instagram"></i>
-				</a>
-				<a href="https://twitter.com" target="_blank">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="https://twitter.com" target="_blank">
 
-					<i class="fab fa-twitter"></i>
-				</a>
-			</div>
+				<i class="fab fa-twitter"></i>
+			</a>
+		</div>
 
-			<!-- Linked to github -->
-			<div class="col-12 text-center small">
-				<a href="https://github.com/Taitdanielle">@2020 DanielleTait</a>
-			</div>
-		</footer>
-		<!--./footer end -->
+		<!-- Linked to github -->
+		<div class="col-12 text-center small">
+			<a href="https://github.com/Taitdanielle">@2020 DanielleTait</a>
+		</div>
+	</footer>
+	<!--./footer end -->
 
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-		</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
-		</script>
 
 		<script async defer
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB6lsBTP858vgMYEP7rM2yk-ipq3H9XaQ&callback=initMap">
-		</script>
 
 </body>
 
