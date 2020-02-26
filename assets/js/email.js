@@ -7,3 +7,17 @@ function validateForm (){
     var phone = document.forms["booking-form-form"]["telephone"].value;
     var poi = document.forms["booking-form-form"]["poi"].value;
     var msg = document.forms["booking-form-form"]["message"].value;
+    
+    if (name == "") {
+        alert("The name field cannot be empty.");
+        return false;
+    }
+    if (name !== "") {
+        if (!(/^[a-zA-Z ]+$/.test(name))) {
+            alert("The name field can only container characters.");
+            return false;
+        }
+    }
+     if (email == "") {
+        alert("The email field must not be empty.")
+        return false;
