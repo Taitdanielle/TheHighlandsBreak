@@ -40,7 +40,7 @@ function validateForm (){
     }
     //Once validation is complete emailjs is fired to send the details
     //to an email address.
-    emailjs.send ("daniellet265@gmail.com", "template_cN4Hm3Z3", {
+    emailjs.send ("daniellet265@gmail.com", "TheHighlandsBreak", {
       "from_name": name,
       "from_email": email,
       "telephone": phone.value,
