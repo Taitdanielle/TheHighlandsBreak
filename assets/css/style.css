@@ -15,9 +15,15 @@ html,body {
 .navbar-light
 .navbar-nav
 .nav-link {
-  font-size: 1.3em; }
+  font-size: 1.3em; 
+@media (min-width: 600px) 
 
+   }
 
+social-links a {
+  font-size: 20px;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none; }
 /*---------------------------Background Image*/
 /* Backgroud image taken by myself*/
 
@@ -57,9 +63,6 @@ button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
     color: rgb(193, 218, 241);
-}
-
-
 }
 /*--------------------------------------------Map*/
 #map {
