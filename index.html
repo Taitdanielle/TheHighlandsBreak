@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="assets/js/main.js"></script>
+	<script src="assets/js/maps.js"></script>
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 	<title>TheHighlandsBreak</title>
@@ -138,7 +138,6 @@
 		<!-- #main-button wraps drop down and city input field-->
 		<div id="main-buttons">
 			<div class="container">
-
 				<div class="justify-content-center">
 
 					<div id="controls">
@@ -155,87 +154,54 @@
 						<!--POI buttons-->
 						<div class="justify-content-center row">
 
-							<button id="hotel-button" type="submit" class="btn" onClick="checkHotels">                  <!--Hotel button-->
+							<button id="hotel-button" type="submit" class="btn" onClick="onPlaceChanged('lodging')">                  <!--Hotel button-->
                             <img src="assets/images/button-icons/bed.png" alt="Bed"><br>Hotel</button>
 
-							<button id="restaurant-button" type="submit" class="btn" onClick="checkRestaurants">         <!--Restaurant button-->
+							<button id="restaurant-button" type="submit" class="btn" onClick="onPlaceChanged('restaurant')">         <!--Restaurant button-->
                             <img src="assets/images/button-icons/restaurant.png" alt="Restaurant"><br>Restaurants</button>
 
-							<button id="attraction-button" type="submit" class="btn" onClick="checkAttractions">         <!--Attractions button-->
+							<button id="attraction-button" type="submit" class="btn" onClick="onPlaceChanged('tourist_attraction')">         <!--Attractions button-->
                             <img src="assets/images/button-icons/monument.png" alt="Monument"><br>Attractions</button>
 
 						</div>
 
-					</div>
-					<!--./container-->
+                            <div class="row" id="map-container">
+							    <div id="map" class="col-8"></div>
+                                <div class="col-4">
+                                    <div class="justify-content-center row" id="info-window">
+                                        <table id="resultsTable">
+                                            <tbody id="results"></tbody>
+                                        </table>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
 
-				</div>
+                </div>
+                <!--./container-->
+
+            </div>
 				<!--#/main-buttons-->
 
-				<div id="main">
-					<div class="container container-fluid">
-
 						<!-- listings and map-->
-						<div class="row">
-							<div id="map" class="col-12">
-                            </div>
-						</div>
 
-						<script>
+						<!-- <script>
 							function initMap() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 6,
-        center: { lat: 55.953251, lng:  -3.188267 }
-    });
-        }
-
-    
-						</script>
+                                var map = new google.maps.Map(document.getElementById("map"), {
+                                    zoom: 6,
+                                    center: { lat: 55.953251, lng:  -3.188267 }
+                                });
+                            }
+						</script> -->
 						<!--./ End of Map \-->
 
 						<!--./row-->
 
 						<!--Info window-->
-						<div class="justify-content-center row" id="info-window">
-							<table id="resultsTable">
-								<tbody id="results"></tbody>
-							</table>
-						</div>
-
-						<div style="display">
-							<div id="info-content">
-								<table>
-									<tr id="iw-url-row" class="iw_table_row">
-										<td id="iw-icon" class="iw_table_icon"></td>
-										<td id="iw-url"></td>
-									</tr>
-									<tr id="iw-address-row" class="iw_table_row">
-										<td class="iw_attribute_name">Address:</td>
-										<td id="iw-address"></td>
-									</tr>
-									<tr id="iw-phone-row" class="iw_table_row">
-										<td class="iw_attribute_name">Telephone:</td>
-										<td id="iw-phone"></td>
-									</tr>
-									<tr id="iw-rating-row" class="iw_table_row">
-										<td class="iw_attribute_name">Rating:</td>
-										<td id="iw-rating"></td>
-									</tr>
-									<tr id="iw-website-row" class="iw_table_row">
-										<td class="iw_attribute_name">Website:</td>
-										<td id="iw-website"></td>
-									</tr>
-								</table>
-							</div>
-						</div>
-						<!--#/info-content-->
-					</div>
+					
+				
 					<!--./Display style for info window-->
-
-				</div>
-				<!--./container-->
-			</div>
-			<!--#/main-->
 
 	</section>
 	<!--End of Find-->
@@ -314,16 +280,15 @@
 	<!-- Footer -->
 	<footer class="bg-dark text-white py-4">
 		<div class="col-12 ml-auto text-center" id="social-links">
-
-			                    <a href="https://en-gb.facebook.com" target="_blank">       <!--Facebook-->
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank">        <!--Instagram-->
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank">              <!--Twitter-->
-                        <i class="fab fa-twitter"></i>
-                    </a>
+            <a href="https://en-gb.facebook.com" target="_blank">       <!--Facebook-->
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">        <!--Instagram-->
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">              <!--Twitter-->
+                <i class="fab fa-twitter"></i>
+            </a>
 		</div>
 
 		<!-- Linked to github -->
@@ -333,13 +298,23 @@
 	</footer>
 	<!--./footer end -->
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
-	</script>
+    <!-- Javascript Libaries -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB6lsBTP858vgMYEP7rM2yk-ipq3H9XaQ&callback=initMap">
-	</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB6lsBTP858vgMYEP7rM2yk-ipq3H9XaQ&libraries=places&callback=initMap"
+    async defer></script>
+    <script>
+    $("#autocomplete").change(function() {
+        if ($("#autocomplete").val() != "") {
+            $("#map-container").show(1000);
+        } else {
+            $("#map-container").hide(1000);
+        }
+    });
+
+    $("#map-container").hide();
+    </script>
 
 </body>
 

@@ -7,7 +7,7 @@ var MARKER_PATH = '/images/marker/marker1.png';
 var goldStar = '/images/marker/star.png';
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
-var countries =  }
+var countries =  {
   'uk'; {
     center: {lat: 55.953251, lng: -3.188267},
     zoom: 5;
@@ -39,6 +39,7 @@ function initMap() {
   places = new google.maps.places.PlacesService(map);
 
   autocomplete.addListener('place_changed', onPlaceChanged);
+}
 
 // When the user selects a city, get the place details for the city and
 // zoom the map in on the city.
