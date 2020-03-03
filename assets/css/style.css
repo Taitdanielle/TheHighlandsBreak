@@ -114,7 +114,7 @@ button[type="submit"] {
   height: 34px;
   margin: 4px;
 }
-}
+
 #resultsTable {
   border-collapse: collapse;
   width: 240px;
@@ -151,7 +151,8 @@ button[type="submit"] {
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out; 
-   @media (min-width: 600px) }
+}
+  @media (min-width: 600px) {
 
 
 #booking-form {
