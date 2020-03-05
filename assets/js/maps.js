@@ -3,7 +3,7 @@
       var markers = [];
       var autocomplete;
       var countryRestrict = {'country': 'uk'};
-      var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
+      var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker/star.png';
       var hostnameRegexp = new RegExp('^https?://.+?/');
 
       var countries = {
