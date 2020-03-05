@@ -38,9 +38,9 @@ function validateForm (){
             return false;
         }
     }
-    //Once validation is complete emailjs is fired to send the details
+    //Once validation is complete emailjs is set to send the details
     //to an email address.
-    emailjs.send ("daniellet265@gmail.com", "TheHighlandsBreak", {
+    emailjs.send ("gmail", "TheHighlandsBreak", {
       "from_name": name,
       "from_email": email,
       "telephone": phone.value,
