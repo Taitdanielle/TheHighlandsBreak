@@ -56,12 +56,6 @@ section {
 
 }
 
-.center-form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 70%;
-}
-
 #info-window {
     max-height: 400px;
     overflow: auto;
@@ -166,13 +160,13 @@ button[type="submit"] {
 
       #submit-form {
   background-color: #ffffff;
-  color: #000000;
+  color: #575656;
   margin-top: 1em;
   margin-left: 1em;
   margin-bottom: 1em; }
   #submit-form:hover {
-    text-decoration: underline;
-    cursor: pointer; }
+    cursor: pointer;
+    color: rgb(193, 218, 241); }
 
     /*---------------------------Modal*/
 
@@ -207,7 +201,6 @@ button[type="submit"] {
     #close {
   color: #000000; }
   #close:hover {
-    text-decoration: underline;
     cursor: pointer; }
 /*--------------------------------------------Media Queries*/
 
@@ -215,7 +208,7 @@ button[type="submit"] {
 /*--------------------------------------------Footer*/
 
 footer a {
-    color: #ccc;
+    color: #575656;
     text-align: center;
     margin:0px;
     
