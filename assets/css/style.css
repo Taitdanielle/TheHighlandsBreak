@@ -21,11 +21,6 @@ html,body {
 /* @media (min-width: 600px) */
 }
 
-social-links a {
-  font-size: 20px;
-  padding: 5px 5px 5px 5px;
-  text-decoration: none; 
-  }
 /*---------------------------Background Image*/
 /* Backgroud image taken by myself*/
 
@@ -49,8 +44,12 @@ social-links a {
       padding-top: 75px;
       } 
   }
-
   
+social-links a {
+  font-size: 20px;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none; 
+  }
 
 section {
   padding-top: 50px 0;
