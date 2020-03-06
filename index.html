@@ -19,10 +19,22 @@
 	<!--Email JS-->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 	<script type="text/javascript">
-		(function(){
-      emailjs.init("user_7XVYOD9tVJ4WxyFxCtSC3");
-   })();
-	</script>
+        (function(){
+           emailjs.init('user_7XVYOD9tVJ4WxyFxCtSC3');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate the contact number value
+                this.contact_number.value = Math.random() * 100000 | 0;
+                console.log("Email sent?")
+                emailjs.sendForm('gmail', 'TheHighlandsBreak', this);
+                
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -244,7 +256,7 @@
 
 			<div id="booking-form" class="row">
 
-				<form id="booking-form-form" onsubmit="return validateForm(this)" method="POST" class="col-10 offset-1">
+				<form id="booking-form-form" onsubmit="return validateForm(this)" class="col-10 offset-1">
 					<div class="form-group">
 						<label for="name">Name</label>
 						<input type="text" class="form-control" id="name" name="fromName" required/>
