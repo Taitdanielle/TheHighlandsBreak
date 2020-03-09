@@ -46,8 +46,8 @@ function validateForm (){
       "telephone"; phone.value,
       "poi"; poi,
       "message"; msg
-    })
-    .then(function(response) {
+    }
+    then(function(response) {
       console.log('SUCCESS!', response.status, response.text);
      
       document.getElementById("booking-form-form").reset();
