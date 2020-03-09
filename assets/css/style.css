@@ -74,7 +74,7 @@ section {
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
-    color: rgb(193, 218, 241);
+    color: #575656;
 }
 /*--------------------------------------------Map*/
 #map {
@@ -220,5 +220,5 @@ footer a {
 }
 footer a:hover,
 footer a:focus{
-    color: rgb(193, 218, 241);
-}
+    color: #575656;
+}}
