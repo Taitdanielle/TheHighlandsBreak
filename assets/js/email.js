@@ -41,11 +41,11 @@ function validateForm (){
     //Once validation is complete emailjs is set to send the details
     //to an email address.
      emailjs.sendForm('gmail', 'TheHighlandsBreak', this); {
-      "from_name": name,
-      "from_email": email,
-      "telephone": phone.value,
-      "poi": poi,
-      "message": msg
+      "from_name"; name,
+      "from_email"; email,
+      "telephone"; phone.value,
+      "poi"; poi,
+      "message"; msg
     })
     .then(function(response) {
       console.log('SUCCESS!', response.status, response.text);
