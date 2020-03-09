@@ -1,5 +1,6 @@
 //Form input validation. Takes the value from each input and ensures 
 //they are correct before submitting.
+debugger;
 function validateForm (){
   
     var name = document.forms["booking-form-form"]["fromName"].value;
