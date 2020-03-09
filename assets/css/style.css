@@ -20,7 +20,13 @@ html,body {
   font-size: 1.3em; 
 /* @media (min-width: 600px) */
 }
+h1 {
+  text-shadow: 1px 1px #fff;
+}
 
+p {
+    font-weight: bold;
+}
 /*---------------------------Background Image*/
 
 #landingpicture {
