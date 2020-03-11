@@ -132,7 +132,6 @@ Manual testing was also conducted to ensure the user story objectives where achi
 3. Zoom in and out of the map.
 4. Switch between Map and Satellite views.
 5. Click on a marker to display more information.
-6. Click on a results tile and display more information above the marker on the map.
 
 
 ## Deployment
