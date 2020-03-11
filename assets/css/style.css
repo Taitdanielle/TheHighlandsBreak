@@ -18,7 +18,7 @@ html,body {
 .navbar-nav
 .nav-link {
   font-size: 1.3em; 
-@media (min-width: 600px)
+ @media (min-width: 600px)
 }
 h1 {
   text-shadow: 1px 1px #fff;
@@ -121,7 +121,6 @@ section {
 #resultsTable {
   border-collapse: collapse;
   width: 240px;
-  @media (min-width: 600px) {
 }
 #rating {
   font-size: 13px;
