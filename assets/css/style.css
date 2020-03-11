@@ -218,7 +218,9 @@ button.btn.btn-primary:hover {
     font-size: 25px;
 }
 /*--------------------------------------------Footer*/
-
+footer-details {
+    display: flex; 
+}
 footer a {
     color: #575656;
     text-align: center;
