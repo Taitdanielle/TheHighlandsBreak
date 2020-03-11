@@ -21,8 +21,7 @@ html,body {
   }
 /*---------------Landing and paragraph text*/
 h1 {
-    color: #fff;
-  text-shadow: 1px 1px #000000;
+  text-shadow: 1px 1px #fff;
   padding-top: 40px;
 }
 
