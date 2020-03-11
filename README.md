@@ -80,7 +80,9 @@ During the process of designing this SPA,  I had a lot of trouble with adding th
 ## Testing
 
 ### I conducted testing across different platforms and web browsers in order to make sure the website worked correctly, and looked great across each one. I also asked friends and family to test across their own devices and to give me honest opinions and feedback.
-
+When about to submit the last push I received an email stating that the The page build failed for the `master` branch with the following error: Unable to build page. Please try again later.
+I was advised by creating a file named .nojekyll (it doesn't need any contents) in the root of your repository to see if it resolves the errors."
+and also filed a report to GitHub as nothing came of adding the file. 
 ### Platforms:
 
 * Samsung Galaxy s10+
@@ -95,7 +97,7 @@ During the process of designing this SPA,  I had a lot of trouble with adding th
 * Lenovo Windows 10 pro
   * Google Chrome
 
-Manual testing was also conducted to ensure the user story objectives where achieved.
+Manual testing was also conducted to ensure the user story objectives where achieved. 
 
 ### City
 
