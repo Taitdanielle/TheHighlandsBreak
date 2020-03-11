@@ -143,7 +143,7 @@ The website is deployed using Github pages TheHighlandsBreak.
 ### How to deploy the code locally?
 If you wish to run this code locally then please follow the instructions below.
 
-1.	Download the code from the Github repository at [TheHighlsndsBreak](https://github.com/Taitdanielle/TheHighlandsBreak)
+1.	Download the code from the Github repository at [TheHighlandsBreak](https://github.com/Taitdanielle/TheHighlandsBreak)
 2.	Click on Clone or download then Download ZIP. This will download the code into a ZIP folder locally on your computer.
 3.	Uncompress the ZIP folder.
 
