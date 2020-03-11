@@ -50,7 +50,7 @@
 	<!--./ End of Landing picture-->
 	<!--About-->
 	<section id="about">
-			<a>&nbsp;</a>
+		<a>&nbsp;</a>
 		</div>
 		<div class="about-text text-center">
 			<h2>About us</h2>
@@ -137,19 +137,18 @@
 					</div>
 					<!--POI buttons-->
 					<div class="justify-content-center row">
-
-						<button id="hotel-button" type="submit" class="btn" onClick="onPlaceChanged('lodging')">                  <!--Hotel button-->
+						<!--Hotel button-->
+						<button id="hotel-button" type="submit" class="btn" onClick="onPlaceChanged('lodging')">
                             <img src="assets/images/button-icons/bed.png" alt="Bed"><br>Hotel</button>
-
-						<button id="restaurant-button" type="submit" class="btn" onClick="onPlaceChanged('restaurant')">         <!--Restaurant button-->
+						<!--Restaurant button-->
+						<button id="restaurant-button" type="submit" class="btn" onClick="onPlaceChanged('restaurant')">
                             <img src="assets/images/button-icons/restaurant.png" alt="Restaurant"><br>Restaurants</button>
 
-						<button id="attraction-button" type="submit" class="btn" onClick="onPlaceChanged('tourist_attraction')">         <!--Attractions button-->
+						<!--Attractions button--> 
+                        <button id="attraction-button" type="submit" class="btn" onClick="onPlaceChanged('tourist_attraction')">
                             <img src="assets/images/button-icons/monument.png" alt="Monument"><br>Attractions</button>
-
 					</div>
 					<!-- listing results from map-->
-
 					<div class="row" id="map-container">
 						<div id="map" class="col-8"></div>
 						<div class="col-4">
@@ -159,7 +158,6 @@
 										<tbody id="results"></tbody>
 									</table>
 								</div>
-
 								<div style="display: none">
 									<div id="info-content">
 										<table>
@@ -253,34 +251,35 @@
 									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                         Send Message</button>
 					</form>
-                    </div>
-					<!-- Modal-->
-					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-						aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title" id="exampleModalLabel">
-										TheHighlandsBreak</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				</div>
+				<!-- Modal-->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+					aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">
+									TheHighlandsBreak</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                                  </button>
-								</div>
-								<div class="modal-body">
-									<p>Thank You for booking with us,
-										<p>We look forward to helping you with your next Highlands
-											break!</p>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-								</div>
+							</div>
+							<div class="modal-body">
+								<p>Thank You for booking with us,
+									<p>We look forward to helping you with your next Highlands
+										break!</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
 		</section>
 		<!--./ Booking End -->
-        <!--./ Modal End -->
+		<!--./ Modal End -->
+
 		<!-- Footer -->
 		<footer class="container-fluid text-center">
 			<div id="footer-details" class="row">
@@ -322,7 +321,7 @@
 		<script
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB6lsBTP858vgMYEP7rM2yk-ipq3H9XaQ&libraries=places&callback=initMap"
 			async defer></script>
-            <!--collaps of map js-->
+		<!--collaps of map js, when nothing in search bar it will retract the map, when city is entered it will pop out-->
 		<script>
 			$("#autocomplete").change(function() {
         if ($("#autocomplete").val() != "") {

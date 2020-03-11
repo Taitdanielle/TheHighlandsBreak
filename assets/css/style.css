@@ -5,7 +5,7 @@ html,body {
 }
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-
+/*-----------------------NavBar*/
 .navbar-nav {
   margin: 1em 0 0 1em; 
   }
@@ -19,7 +19,7 @@ html,body {
 .nav-link {
   font-size: 1.3em;
   }
-
+/*---------------Landing and paragraph text*/
 h1 {
   text-shadow: 1px 1px #fff;
   padding-top: 40px;
@@ -28,12 +28,11 @@ h1 {
 p {
     font-weight: bold;
 }
-
+/*---------------------------Landing picture*/
 #landingpicture p {
     color: #fff;
     text-shadow: 1px 1px #000000;
 }
-/*---------------------------Background Image*/
 
 #landingpicture {
   background-image: url("../images/2-1.jpg");
@@ -54,13 +53,7 @@ p {
       height: 400px; 
       padding-top: 75px;
       } 
-  }
-  
-social-links a {
-  font-size: 20px;
-  padding: 5px 5px 5px 5px;
-  text-decoration: none; 
-  }
+/*-------------sections*/
 
 section {
   padding-top: 50px;
@@ -76,22 +69,23 @@ section {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
+/*----------------------info window*/
 #info-window {
     max-height: 400px;
     overflow: auto;
 }
+/*--------------------------------------------Map*/
 
 #map-container {
     padding-bottom: 50px;
 
 }
-/*--------------------------------------------Map*/
 #map {
    height:400px;
    width:100%;
 }
-   /*------------------------ booking*/
+
+/*------------------------ Listing*/
 
 #listings {
   position: absolute;
@@ -141,6 +135,8 @@ section {
 .iw_table_icon {
   text-align: right;
 }
+/*------------------- Booking Form*/
+
 #book {
   position: relative;
   height: 3em; }
@@ -231,6 +227,13 @@ footer a {
     text-decoration: none;
     
 }
+
+social-links a {
+  font-size: 20px;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none; 
+  }
+
 footer a:hover,
 footer a:focus{
     color: rgb(193, 218, 241);
