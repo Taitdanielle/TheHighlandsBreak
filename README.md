@@ -5,15 +5,15 @@
 ## Interactive Front-end Development Milestone Project 
 
 The aim of this project was to create and build a Single Page Application (SPA) Interactive Front-end webpage using Google Maps API. The SPA would allows users to search for their next 
-Weekend highlands break, and to help users find attractions, restraints and hotels. 
+Weekend highlands break, and to help users find attractions, restaurants and hotels. 
 You can find the live page [here](https://taitdanielle.github.io/TheHighlandsBreak/).
 
 ## UX
 
 I started with a desktop approach for this project, By created mockups and wireframes for larger screens then I moved onto creating wireframes for smaller screens. The design of the website
-is simple and easy to navigate and use. Wireframes can be found here (input link for them)
+is simple and easy to navigate and use. Wireframes can be found [here](https://github.com/Taitdanielle/TheHighlandsBreak/tree/master/assets/images/wireframes).
 Below are user stories that were conducted in order to gain clear goals that needed to be achieved for this webpage.
-Wireframes can be found [here](https://github.com/Taitdanielle/TheHighlandsBreak/tree/master/assets/images/wireframes).
+
 
 * I want to choose the city where my break will be
 * I want the map to show me points of interest like attractions, restaurants and hotels.
