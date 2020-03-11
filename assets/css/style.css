@@ -178,7 +178,6 @@ button[type="submit"] {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
@@ -207,9 +206,6 @@ button[type="submit"] {
   color: #000000; }
   #close:hover {
     cursor: pointer; }
-/*--------------------------------------------Media Queries*/
-
-
 /*--------------------------------------------Footer*/
 
 footer a {
