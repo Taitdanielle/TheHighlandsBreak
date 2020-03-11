@@ -22,6 +22,7 @@ html,body {
 }
 h1 {
   text-shadow: 1px 1px #fff;
+  padding-top: 20px;
 }
 
 p {
@@ -69,12 +70,6 @@ section {
 #map-container {
     padding-bottom: 50px;
 
-}
-
-button[type="submit"] {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    color: #575656;
 }
 /*--------------------------------------------Map*/
 #map {
@@ -173,6 +168,16 @@ button[type="submit"] {
     cursor: pointer;
     color: rgb(193, 218, 241); }
 
+.btn {
+    color: #575656;
+    background-color: rgb(193, 218, 241);
+    border-color: #575656;
+    }
+
+.btn:hover {
+    color: rgb(193, 218, 241);
+    text-decoration: none;
+}
     /*---------------------------Modal*/
 
 .modal {
@@ -216,5 +221,5 @@ footer a {
 }
 footer a:hover,
 footer a:focus{
-    color: #575656;
+    color: rgb(193, 218, 241);
 }}
