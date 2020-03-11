@@ -182,3 +182,8 @@ In order to use this code for your own projects you will need to generate your o
 ### Acknowledgements
 
 I received inspiration for this project from the love of my country and the beautiful places it holds. So much to do in Scotland and see. The scenery from the highlands is beautiful and morepeople should experience it. 
+I would also like to thank
+  * Tutor Support
+  * All the guys on Slack
+  
+  I really appreciate these guys and what they do, A Massive help especially for a night hawk like myself.
