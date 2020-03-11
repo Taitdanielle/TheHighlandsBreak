@@ -18,7 +18,7 @@ html,body {
 .navbar-nav
 .nav-link {
   font-size: 1.3em; 
-/* @media (min-width: 600px) */
+@media (min-width: 600px)
 }
 h1 {
   text-shadow: 1px 1px #fff;
@@ -58,8 +58,18 @@ social-links a {
   }
 
 section {
-  padding-top: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
+}
+
+.block-divider {
+  width: 150px;
+  height: 5px;
+  border: 0;
+  background-color: rgb(193, 218, 241);
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 #info-window {
@@ -150,7 +160,8 @@ section {
 
 #booking-form {
   background: rgba(255, 255, 255, 0.5);
-  margin-bottom: 5em; }
+  margin-bottom: 5em;
+  padding-bottom:10px; }
   #booking-form .form-group {
     display: block;
     margin: 1em; }
@@ -166,15 +177,16 @@ section {
   margin-bottom: 1em; }
   #submit-form:hover {
     cursor: pointer;
-    color: rgb(193, 218, 241); }
+    color: rgb(193, 218, 241); 
+    }
 
-.btn {
+button.btn.btn-primary {
     color: #575656;
-    background-color: rgb(193, 218, 241);
+    background-color: #fff;
     border-color: #575656;
     }
 
-.btn:hover {
+button.btn.btn-primary:hover {
     color: rgb(193, 218, 241);
     text-decoration: none;
 }
@@ -191,32 +203,23 @@ section {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4); }
 
-  .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #575656;
-  width: 60%; }
-
-  .close-cross {
-  color: #575656;
-  font-size: 2.5em;
-  font-weight: bold; }
-  .close-cross:hover {
-    color: #000000;
-    text-decoration: none;
-    cursor: pointer; }
-
-    #close {
-  color: #000000; }
-  #close:hover {
-    cursor: pointer; }
+.modal-body {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 0px;
+    /* border: 1px solid #575656; */
+    width: 60%;
+    text-align: center;
+    font-size: 25px;
+}
 /*--------------------------------------------Footer*/
 
 footer a {
     color: #575656;
     text-align: center;
     margin:0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     
 }
 footer a:hover,
