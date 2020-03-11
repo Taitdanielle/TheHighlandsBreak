@@ -17,16 +17,21 @@ html,body {
 .navbar-light
 .navbar-nav
 .nav-link {
-  font-size: 1.3em; 
- @media (min-width: 600px)
-}
+  font-size: 1.3em;
+  }
+
 h1 {
   text-shadow: 1px 1px #fff;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 p {
     font-weight: bold;
+}
+
+#landingpicture p {
+    color: #fff;
+    text-shadow: 1px 1px #000000;
 }
 /*---------------------------Background Image*/
 
@@ -64,12 +69,12 @@ section {
 }
 
 .block-divider {
-  width: 150px;
+  width: 100px;
   height: 5px;
   border: 0;
   background-color: rgb(193, 218, 241);
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #info-window {
