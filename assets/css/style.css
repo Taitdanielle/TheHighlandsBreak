@@ -121,6 +121,7 @@ section {
 #resultsTable {
   border-collapse: collapse;
   width: 240px;
+  @media (min-width: 600px) {
 }
 #rating {
   font-size: 13px;
